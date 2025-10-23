@@ -10,6 +10,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-rem: var(--font-rem);
+    --font-pt-sans-caption: var(--font-pt-sans-caption);
+    --font-pt-sans-narrow: var(--font-pt-sans-narrow);
+    --font-just-another-hand: var(--font-just-another-hand);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +27,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hide scrollbars */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

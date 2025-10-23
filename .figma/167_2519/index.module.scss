@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+.countries {
+  position: relative;
+  width: 2060px;
+  height: 16px;
+
+  .flagPack {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .diversity2 {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+  }
+
+  .mongolia {
+    flex-shrink: 0;
+    line-height: 31px;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-family: "PT Sans Caption", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: UPPERCASE;
+  }
+
+  .flagPack2 {
+    flex-shrink: 0;
+    width: 60px;
+    height: 61px;
+    overflow: hidden;
+  }
+
+  .frame514910 {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+  }
+
+  .frame514909 {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+  }
+
+  .memberOfCountries {
+    position: absolute;
+    top: -138px;
+    left: 831px;
+    width: 413px;
+    height: 47px;
+    line-height: 47px;
+    letter-spacing: 0;
+    color: #212121;
+    font-family: "PT Sans Caption", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: UPPERCASE;
+  }
+
+  .frame514921 {
+    position: absolute;
+    top: -96px;
+    left: 184px;
+    width: 1607px;
+    height: 221px;
+    rotate: -172deg;
+
+    .frame514975 {
+      display: flex;
+      position: absolute;
+      top: 77px;
+      left: -1px;
+      align-items: center;
+      padding-left: 21px;
+      width: 1532px;
+      height: 61px;
+      rotate: -5deg;
+      background-image: linear-gradient(
+        90deg,
+        #0097a7 0%,
+        #4689b3 51.44%,
+        #1a237e 100%
+      );
+
+      .frame514973 {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        width: 497px;
+      }
+
+      .frame5149732 {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        margin-left: 1009px;
+        width: 497px;
+      }
+
+      .frame5149733 {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        margin-left: 990px;
+        width: 497px;
+      }
+    }
+
+    .rectangle5585 {
+      position: absolute;
+      top: 67px;
+      left: 16px;
+      background: #ffffff0a;
+      width: 1590px;
+      height: 87px;
+      rotate: -5deg;
+      backdrop-filter: blur(4px);
+    }
+  }
+
+  .frame514920 {
+    position: absolute;
+    top: -141px;
+    left: 16px;
+    width: 2047px;
+    height: 233px;
+    rotate: -5deg;
+
+    .frame514917 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1721px;
+      height: 206px;
+
+      .frame514974 {
+        display: flex;
+        position: absolute;
+        top: 82px;
+        left: 203px;
+        align-items: flex-start;
+        padding-left: 21px;
+        width: 1532px;
+        height: 61px;
+        overflow: hidden;
+        rotate: 5deg;
+        background-image: linear-gradient(
+          90deg,
+          #0097a7 0%,
+          #4689b3 51.44%,
+          #1a237e 100%
+        );
+
+        .frame5149752 {
+          display: flex;
+          align-items: flex-start;
+          padding-right: 1px;
+          height: 61px;
+
+          .frame5149734 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 10px;
+            width: 497px;
+            min-width: 497px;
+            height: 61px;
+
+            .frame5149092 {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              column-gap: 18px;
+            }
+
+            .frame5149102 {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              column-gap: 18px;
+            }
+          }
+
+          .frame514911 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 18px;
+            margin-top: 3px;
+            margin-left: 30px;
+          }
+
+          .frame514912 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 18px;
+            margin-top: 2px;
+            margin-left: 40px;
+          }
+
+          .frame514913 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 18px;
+            margin-top: 1px;
+            margin-left: 40px;
+          }
+
+          .frame514914 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 18px;
+            margin-top: -1px;
+            margin-left: 40px;
+          }
+        }
+
+        .frame5149735 {
+          display: flex;
+          align-items: center;
+          column-gap: 40px;
+          margin-top: -2px;
+          margin-left: 16px;
+          width: 497px;
+        }
+
+        .frame5149736 {
+          display: flex;
+          align-items: center;
+          column-gap: 40px;
+          margin-top: -6px;
+          margin-left: 990px;
+          width: 497px;
+        }
+      }
+
+      .rectangle5587 {
+        position: absolute;
+        top: 18px;
+        left: 2px;
+        width: 424px;
+        height: 61px;
+        rotate: 185deg;
+        background-image: linear-gradient(
+          270.13deg,
+          #074e8a0d -10.63%,
+          #0d88f000 101.54%
+        );
+        backdrop-filter: blur(3px);
+      }
+    }
+
+    .rectangle5586 {
+      position: absolute;
+      top: 152px;
+      left: 1566px;
+      width: 480px;
+      height: 61px;
+      rotate: 5deg;
+      background-image: linear-gradient(
+        270.11deg,
+        #074e8a0d -10.63%,
+        #0d88f000 101.54%
+      );
+      backdrop-filter: blur(3px);
+    }
+  }
+}
