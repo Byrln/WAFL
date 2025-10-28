@@ -2,353 +2,218 @@ import Image from "next/image";
 
 export default function WAFHighlightSection() {
   return (
-    <section id="highlight" className="py-20 bg-white">
+    <section id="highlight" className=" bg-white">
       <div className="mx-auto max-w-7xl px-6">
         {/* Header Badge - Frame 514940 */}
-        <div className="relative mb-12" style={{ height: "120px" }}>
-          <div
-            className="absolute top-2 left-0 rounded-3xl"
-            style={{
-              background: "#212121",
-              width: "1230px",
-              height: "101px",
-              borderRadius: "24px",
-            }}
-          />
-          <div
-            className="absolute top-0 left-8 flex items-center gap-2"
-            style={{ width: "1146px", height: "120px" }}
-          >
-            <div className="flex items-center gap-2">
-              <div className="flex items-center">
-                <div className="flex items-center justify-center gap-2 p-2.5">
-                  <p
-                    className="flex-shrink-0 font-rem"
-                    style={{
-                      fontSize: "48px",
-                      fontWeight: "600",
-                      color: "#fafafa",
-                      textTransform: "uppercase",
-                      lineHeight: "60px",
-                      letterSpacing: "0",
-                    }}
-                  >
-                    WAF
-                  </p>
-                  <Image
-                    src="/assets/curve-bar.png"
-                    alt="Curve bar"
-                    width={135}
-                    height={80}
-                    className="flex-shrink-0"
-                  />
-                </div>
-                <p
-                  className="flex-shrink-0 font-extrabold mx-2 font-rem"
-                  style={{
-                    fontSize: "96px",
-                    color: "#fafafa",
-                    textTransform: "uppercase",
-                    lineHeight: "120px",
-                    letterSpacing: "0",
-                    marginLeft: "-5px",
-                  }}
-                >
-                  HIGHLIGHT
-                </p>
-              </div>
+        {/* Responsive Header Badge - Frame 514940 */}
+        <div className="relative  w-full h-16 sm:h-20 md:h-28 lg:h-[120px]">
+          {/* Background bar - responsive height */}
+          <div className="absolute top-1 sm:top-1 md:top-2 left-0 right-0 rounded-xl sm:rounded-2xl md:rounded-3xl bg-[#212121] h-12 sm:h-16 md:h-20 lg:h-24" />
+
+          {/* Content wrapper - responsive layout */}
+          <div className="absolute top-0 left-0 right-0 flex items-center justify-center gap-1 sm:gap-2 md:gap-4 px-2 sm:px-4 h-full">
+            {/* Left group: WAF + curve + HIGHLIGHT */}
+            <div className="flex items-center gap-1 sm:gap-1 md:gap-2">
+              <p className="font-rem flex-shrink-0 text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold text-white uppercase leading-tight">
+                WAF
+              </p>
+              <Image
+                src="/assets/curve-bar.png"
+                alt="Curve bar"
+                width={100}
+                height={24}
+                className="flex-shrink-0 w-20 h-5 sm:w-20 sm:h-7 md:w-32 md:h-10 lg:w-48 lg:h-12"
+              />
+              <p className="font-rem font-extrabold flex-shrink-0 text-lg sm:text-2xl md:text-4xl lg:text-6xl text-white uppercase leading-tight -ml-1">
+                HIGHLIGHT
+              </p>
             </div>
-            <Image
-              src="/assets/element.png"
-              alt="Air balloon"
-              width={80}
-              height={80}
-              className="flex-shrink-0"
-            />
-            <p
-              className="flex-shrink-0 font-rem"
-              style={{
-                fontSize: "48px",
-                fontWeight: "600",
-                color: "#fafafa",
-                textTransform: "uppercase",
-                lineHeight: "60px",
-                letterSpacing: "0",
-              }}
-            >
-              section
-            </p>
+
+            {/* Right group: balloon + section */}
+            <div className="flex items-center gap-1 sm:gap-1 md:gap-2">
+              <Image
+                src="/assets/element.png"
+                alt="Air balloon"
+                width={100}
+                height={100}
+                className="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-16 lg:h-16"
+              />
+              <p className="font-rem flex-shrink-0 text-sm sm:text-lg md:text-2xl lg:text-4xl font-semibold text-white uppercase leading-tight">
+                section
+              </p>
+            </div>
           </div>
         </div>
-
-        {/* Main Content Grid - Frame 514954 */}
-        <div
-          className="flex items-start gap-3"
-          style={{ alignSelf: "stretch" }}
-        >
-          {/* Large Featured Card - Rectangle 5591 */}
-          <div
-            className="flex items-center rounded-3xl"
-            style={{
-              backgroundImage: "url(/assets/news1.png)",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
+        {/* Main Content Grid - Layout matching provided image */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
+          {/* Large Featured Card - Left side, spans 2 columns on large screens */}
+          <div className="lg:col-span-2">
             <div
-              className="flex flex-col items-start justify-center flex-grow rounded-3xl px-6 py-24"
+              className="relative h-64 sm:h-72 md:h-82 lg:h-[400px] rounded-2xl lg:rounded-3xl overflow-hidden"
               style={{
-                height: "471px",
-                width: "735px",
-                rowGap: "303px",
-                backgroundImage:
-                  "linear-gradient(180deg, #33333300 0%, #000000ad 100%)",
-              }}
-            >
-              {/* Read More Button - Frame 514925 */}
-              <div
-                className="flex items-center justify-center gap-2.5 border-2 border-white rounded-full px-4 py-2 mt-2"
-                style={{
-                  background: "#00000099",
-                  width: "131px",
-                  height: "27px",
-                  border: "2px solid #fafafa",
-                  borderRadius: "56px",
-                }}
-              >
-                <p
-                  className="flex-shrink-0 font-pt-sans-caption"
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "700",
-                    color: "#fafafa",
-                    lineHeight: "18px",
-                    letterSpacing: "0",
-                  }}
-                >
-                  Read More
-                </p>
-                <svg width="32" height="32" viewBox="0 0 18 18" fill="none">
-                  <path
-                    d="M7 7h10v10M7 17L17 7"
-                    stroke="#fafafa"
-                    strokeWidth="2"
-                  />
-                </svg>
-              </div>
-
-              {/* Content - Frame 514941 */}
-              <div
-                className="flex flex-col items-start self-stretch"
-                style={{ rowGap: "0px" }}
-              >
-                <h3
-                  className="flex-shrink-0 self-stretch font-rem"
-                  style={{
-                    fontSize: "40px",
-                    fontWeight: "700",
-                    color: "#ffffff",
-                    textTransform: "uppercase",
-                    letterSpacing: "0",
-                  }}
-                >
-                  Championship final
-                </h3>
-                <p
-                  className="flex-shrink-0 self-stretch overflow-hidden text-ellipsis line-clamp-2 font-pt-sans-caption"
-                  style={{
-                    fontSize: "20px",
-                    color: "#ffffff",
-                    height: "66px",
-                  }}
-                >
-                  The World Arm Lifting Federation (WAF) is the official global
-                  organization dedicated to promoting and developing the sport
-                  of arm lifting worldwide.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column Cards - Frame 514953 */}
-          <div
-            className="flex flex-col items-center justify-center"
-            style={{ width: "482px", rowGap: "26px" }}
-          >
-            {/* Top Row - Frame 514952 */}
-            <div
-              className="inline-flex items-center justify-center self-stretch"
-              style={{ marginRight: "-2px", marginLeft: "-2px" }}
-            >
-              {/* Blue Card - Frame 514948 */}
-              <div className="flex items-center pr-3.5">
-                <div
-                  className="relative rounded-2xl"
-                  style={{
-                    background: "#1a237e",
-                    width: "239px",
-                    height: "198px",
-                  }}
-                >
-                  <Image
-                    src="/assets/muscle.svg"
-                    alt="Muscle icon"
-                    width={86}
-                    height={86}
-                    className="absolute"
-                    style={{
-                      top: "102px",
-                      left: "-10px",
-                      overflow: "hidden",
-                    }}
-                  />
-                  <p
-                    className="absolute text-center font-rem"
-                    style={{
-                      top: "20px",
-                      left: "8px",
-                      width: "231px",
-                      height: "173px",
-                      fontSize: "20px",
-                      fontWeight: "700",
-                      color: "#000000",
-                      textTransform: "uppercase",
-                      letterSpacing: "0",
-                      lineHeight: "1.2",
-                    }}
-                  >
-                    <span style={{ color: "#FFEB3B" }}>"UNLEASH THE</span>
-                    <br />
-                    <span style={{ color: "#FFEB3B" }}>POWER WITHIN.</span>
-                    <br />
-                    <span style={{ color: "#ffffff" }}>GRIP IT,</span>
-                    <br />
-                    <span style={{ color: "#ffffff" }}>LIFT IT.</span>
-                    <br />
-                    <span style={{ color: "#FFEB3B" }}>CONQUER THE</span>
-                    <br />
-                    <span style={{ color: "#FFEB3B" }}>WORLD."</span>
-                  </p>
-                  <Image
-                    src="/assets/quote-mark.svg"
-                    alt="Quote icon"
-                    width={33}
-                    height={33}
-                    className="absolute"
-                    style={{
-                      top: "7px",
-                      left: "193px",
-                      overflow: "hidden",
-                    }}
-                  />
-                </div>
-              </div>
-
-              {/* Image Card - Rectangle 5594 */}
-              <div
-                className="flex items-center rounded-2xl"
-                style={{
-                  backgroundImage: "url(/assets/news5.png)",
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <div
-                  className="rounded-2xl"
-                  style={{
-                    width: "233px",
-                    height: "198px",
-                    backgroundImage:
-                      "linear-gradient(180deg, #24242400 0%, #000000c7 100%)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Bottom Card - Rectangle 5592 */}
-            <div
-              className="flex items-center self-stretch rounded-2xl"
-              style={{
-                backgroundImage: "url(/assets/news3.png)",
-                backgroundPosition: "0px",
-                backgroundSize: "100%",
+                backgroundImage: "url(/assets/news1.png)",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
               }}
             >
               <div
-                className="flex flex-col items-start justify-center flex-grow rounded-2xl px-3"
+                className="absolute inset-0 flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-2xl lg:rounded-3xl"
                 style={{
-                  height: "246px",
-                  rowGap: "131px",
                   backgroundImage:
-                    "linear-gradient(180deg, #3b3a3a00 0%, #000000bf 100%)",
+                    "linear-gradient(180deg, #33333300 0%, #000000ad 100%)",
                 }}
               >
                 {/* Read More Button */}
-                <div
-                  className="flex items-center justify-center gap-2.5 border-2 border-white rounded-full px-4 py-2"
-                  style={{
-                    background: "#00000099",
-                    width: "131px",
-                    height: "27px",
-                    border: "2px solid #fafafa",
-                    borderRadius: "56px",
-                  }}
-                >
-                  <p
-                    className="flex-shrink-0 font-pt-sans-caption"
-                    style={{
-                      fontSize: "14px",
-                      fontWeight: "700",
-                      color: "#fafafa",
-                      lineHeight: "18px",
-                      letterSpacing: "0",
-                    }}
-                  >
-                    Read More
-                  </p>
-                  <svg width="32" height="32" viewBox="0 0 18 18" fill="none">
-                    <path
-                      d="M7 7h10v10M7 17L17 7"
-                      stroke="#fafafa"
-                      strokeWidth="2"
-                    />
-                  </svg>
+                <div className="self-start">
+                  <div className="inline-flex items-center justify-center gap-2.5 border-2 border-white rounded-full px-3 sm:px-4 py-1.5 sm:py-2 bg-black/60">
+                    <p className="text-xs sm:text-sm font-bold text-white">
+                      Read More
+                    </p>
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      className="sm:w-4 sm:h-4"
+                    >
+                      <path
+                        d="M7 7h10v10M7 17L17 7"
+                        stroke="#fafafa"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
                 </div>
 
                 {/* Content */}
-                <div
-                  className="flex flex-col items-start self-stretch"
-                  style={{ rowGap: "2px" }}
-                >
-                  <h4
-                    className="flex-shrink-0 self-stretch font-rem"
-                    style={{
-                      fontSize: "20px",
-                      fontWeight: "700",
-                      color: "#ffffff",
-                      textTransform: "uppercase",
-                      letterSpacing: "0",
-                    }}
-                  >
-                    Our new Event
-                  </h4>
-                  <p
-                    className="flex-shrink-0 self-stretch overflow-hidden text-justify font-rem"
-                    style={{
-                      fontSize: "15px",
-                      color: "#ffffff",
-                      letterSpacing: "0",
-                      display: "-webkit-box",
-                      WebkitLineClamp: "2",
-                      WebkitBoxOrient: "vertical",
-                    }}
-                  >
-                    in this event is crazy people are came. Apollons atheletes
-                    are won these time, next is who?
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white uppercase">
+                    Championship final
+                  </h3>
+                  <p className="text-sm sm:text-base lg:text-xl text-white line-clamp-2 sm:line-clamp-3">
+                    The World Arm Lifting Federation (WAF) is the official
+                    global organization dedicated to promoting and developing
+                    the sport of arm lifting worldwide.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side Cards - 2x2 Grid Layout */}
+          <div className="lg:col-span-1">
+            <div className="grid grid-cols-2 gap-3 lg:gap-4 h-full">
+              {/* Quote Card */}
+              <div className="h-full">
+                <div
+                  className="relative h-56 sm:h-64 md:h-80 lg:h-48 rounded-xl lg:rounded-2xl p-2 sm:p-3 lg:p-4"
+                  style={{ background: "#1a237e" }}
+                >
+                  <Image
+                    src="/assets/muscle.svg"
+                    alt="Muscle icon"
+                    width={30}
+                    height={30}
+                    className="absolute bottom-1 -left-1 lg:bottom-2 lg:-left-2 w-20 h-20 lg:w-8 lg:h-8"
+                  />
+                  <Image
+                    src="/assets/quote-mark.svg"
+                    alt="Quote icon"
+                    width={16}
+                    height={16}
+                    className="absolute top-2 right-2 lg:top-3 lg:right-3 w-10 h-10 lg:w-4 lg:h-4"
+                  />
+                  <div className="text-center h-full flex items-center justify-center px-1">
+                    <p className="text-xl sm:text-2xl md:text-3xl lg:text-sm font-bold uppercase leading-tight">
+                      <span className="text-yellow-400">"UNLEASH THE</span>
+                      <br />
+                      <span className="text-yellow-400">POWER WITHIN.</span>
+                      <br />
+                      <span className="text-white">GRIP IT,</span>
+                      <br />
+                      <span className="text-white">LIFT IT.</span>
+                      <br />
+                      <span className="text-yellow-400">CONQUER THE</span>
+                      <br />
+                      <span className="text-yellow-400">WORLD."</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Image Card */}
+              <div className="h-full">
+                <div
+                  className="relative h-56 sm:h-64 md:h-82 lg:h-48 rounded-xl lg:rounded-2xl overflow-hidden"
+                  style={{
+                    backgroundImage: "url(/assets/news5.png)",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 rounded-xl lg:rounded-2xl"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(180deg, #24242400 0%, #000000c7 100%)",
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* Bottom Event Card - Spans both columns */}
+              <div className="col-span-2">
+                <div
+                  className="relative h-56 sm:h-64 md:h-80 lg:h-[190px] rounded-xl lg:rounded-2xl overflow-hidden"
+                  style={{
+                    backgroundImage: "url(/assets/news3.png)",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 flex flex-col justify-between p-2 sm:p-3 lg:p-4 rounded-xl lg:rounded-2xl"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(180deg, #3b3a3a00 0%, #000000bf 100%)",
+                    }}
+                  >
+                    {/* Read More Button */}
+                    <div className="self-start">
+                      <div className="inline-flex items-center justify-center gap-1.5 lg:gap-2.5 border-2 border-white rounded-full px-2 sm:px-3 py-1 sm:py-1.5 bg-black/60">
+                        <p className="text-xs sm:text-sm lg:text-sm font-bold text-white">
+                          Read More
+                        </p>
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                          className="lg:w-3 lg:h-3"
+                        >
+                          <path
+                            d="M7 7h10v10M7 17L17 7"
+                            stroke="#fafafa"
+                            strokeWidth="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="space-y-1">
+                      <h4 className="text-sm sm:text-base lg:text-lg font-bold text-white uppercase">
+                        Our new Event
+                      </h4>
+                      <p className="text-xs sm:text-sm lg:text-sm text-white line-clamp-2">
+                        in this event is crazy people are came. Apollons
+                        athletes are won these time, next is who?
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

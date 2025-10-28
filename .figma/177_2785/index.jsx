@@ -17,7 +17,7 @@ const Component = () => {
                   by instilling confidence
                 </p>
                 <img
-                  src="../image/mh1ves47-m5g7cjo.svg"
+                  src="../image/mh4dga0n-50zd9hs.svg"
                   className={styles.dumbbell02}
                 />
               </div>
@@ -32,7 +32,7 @@ const Component = () => {
               <div className={styles.frame514990}>
                 <p className={styles.joinUs}>Join Us</p>
                 <img
-                  src="../image/mh1ves47-ug8a1zf.svg"
+                  src="../image/mh4dga0o-ktyt7l3.svg"
                   className={styles.arrowUpRight}
                 />
               </div>
@@ -40,11 +40,11 @@ const Component = () => {
           </div>
           <div className={styles.frame515000}>
             <img
-              src="../image/mh1ves4v-l38e6xs.png"
+              src="../image/mh4dga0v-we6pygm.png"
               className={styles.rectangle5583}
             />
             <img
-              src="../image/mh1ves4v-bgz5ymp.png"
+              src="../image/mh4dga0v-7z0nbpc.png"
               className={styles.hunyuanImage30Genera}
             />
           </div>
