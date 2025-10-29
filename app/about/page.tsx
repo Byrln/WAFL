@@ -12,7 +12,7 @@ export default function About() {
       <main className="min-h-screen">
         {/* Navigation */}
         <Navbar />
-        <div className="bg-gradient-to-b from-white via-blue-700 to-blue-600 h-screen py-2">
+        <div className="bg-gradient-to-b from-white via-blue-700 to-blue-600 min-h-screen py-2">
           {/* Hero Section */}
           <div className="relative flex items-center justify-center mx-1 sm:mx-3 lg:mx-5 my-1 sm:my-2 lg:my-18 rounded-xl sm:rounded-2xl lg:rounded-4xl overflow-hidden max-h-[300px] sm:max-h-[350px] lg:max-h-[650px]">
             {/* Background with multiple layers */}
@@ -60,7 +60,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 -mt-52">
+        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 -mt-24 sm:-mt-32 lg:-mt-52">
           {/* Mission & Vision Section */}
           <AnimatedSection delay={0.1} direction="up">
             <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -636,9 +636,9 @@ export default function About() {
           </div>
 
           {/* Footer */}
-          <AnimatedSection delay={0.1}>
+          <div className="px-42 pb-4">
             <FooterSection />
-          </AnimatedSection>
+          </div>
         </div>
       </main>
     </PageTransition>

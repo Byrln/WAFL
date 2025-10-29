@@ -15,26 +15,9 @@ export default function FooterSection() {
           {/* Description */}
           <div className="flex-1">
             <p className="text-[#fafafa] text-sm sm:text-base lg:text-lg xl:text-[20px] leading-relaxed font-pt-sans-caption">
-              The official global organization dedicated to promoting and developing the sport of armlifting worldwide.
+              The official global organization dedicated to promoting and
+              developing the sport of armlifting worldwide.
             </p>
-          </div>
-          
-          {/* Contact Info */}
-          <div className="flex-1">
-            <div className="text-[#fafafa] text-sm sm:text-base lg:text-lg xl:text-[20px] leading-relaxed font-pt-sans-caption space-y-1">
-              <div className="flex items-center justify-center sm:justify-start gap-2">
-                <span>📍</span>
-                <span>Ulaanbaatar, Mongolia</span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start gap-2">
-                <span>✉️</span>
-                <span>info@waf.org</span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start gap-2">
-                <span>🌐</span>
-                <span>www.waf.org</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -47,15 +30,6 @@ export default function FooterSection() {
             <span className="text-[#fafafa] text-xs sm:text-sm lg:text-[14px] font-pt-sans-caption">
               © 2025 World Armlifting Federation (WALF). All rights reserved.
             </span>
-            <span className="hidden sm:inline text-[#fafafa]">•</span>
-            <div className="flex items-center gap-1">
-              <span className="text-white text-xs sm:text-sm lg:text-[14px] font-pt-sans-caption">
-                Designed & Developed by
-              </span>
-              <span className="text-white text-sm sm:text-base lg:text-[16px] font-bold font-pt-sans-caption">
-                Byrln
-              </span>
-            </div>
           </div>
         </div>
       </div>

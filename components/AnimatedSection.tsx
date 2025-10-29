@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { ReactNode } from 'react';
 
 interface AnimatedSectionProps {
@@ -31,7 +31,7 @@ export default function AnimatedSection({
     }
   };
 
-  const variants = {
+  const variants: Variants = {
     hidden: {
       opacity: 0,
       ...getInitialPosition(),
@@ -43,7 +43,7 @@ export default function AnimatedSection({
       transition: {
         duration: 0.6,
         delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: [0.25, 0.25, 0.25, 0.75] as [number, number, number, number],
       },
     },
   };

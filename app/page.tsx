@@ -14,15 +14,15 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 export default function Home() {
   return (
-    <PageTransition>
+    <PageTransition className="bg-white overflow-hidden">
       <main className="min-h-screen bg-white">
         {/* Navigation */}
         <Navbar />
 
         {/* All Sections */}
-        <AnimatedSection className="pt-16 sm:pt-20">
+        <div className="pt-16 sm:pt-20">
           <HeroSection />
-        </AnimatedSection>
+        </div>
 
         <AnimatedSection delay={0.1}>
           <AboutSection />
