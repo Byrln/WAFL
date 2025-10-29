@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import LeadersSlider from "../../components/sections/LeadersSlider";
 import PageTransition from "@/components/PageTransition";
 import AnimatedSection from "@/components/AnimatedSection";
 import FooterSection from "@/components/sections/FooterSection";
@@ -12,12 +13,12 @@ export default function About() {
       <main className="min-h-screen">
         {/* Navigation */}
         <Navbar />
-        <div className="bg-gradient-to-b from-white via-blue-700 to-blue-600 min-h-screen py-2">
+        <div className="bg-gradient-to-b from-white via-blue-700 to-blue-600 py-20">
           {/* Hero Section */}
-          <div className="relative flex items-center justify-center mx-1 sm:mx-3 lg:mx-5 my-1 sm:my-2 lg:my-18 rounded-xl sm:rounded-2xl lg:rounded-4xl overflow-hidden max-h-[300px] sm:max-h-[350px] lg:max-h-[650px]">
+          <div className="relative flex items-center justify-center mx-1 sm:mx-3 lg:mx-5 rounded-xl sm:rounded-2xl lg:rounded-4xl overflow-hidden min-h-[500px] lg:min-h-[600px] md:max-h-full lg:max-h-[650px]">
             {/* Background with multiple layers */}
             <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              className="absolute inset-0 bg-cover bg-top bg-no-repeat"
               style={{
                 backgroundImage: "url('/assets/about-back.png')",
               }}
@@ -32,7 +33,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/64" />
 
             {/* Content */}
-            <div className="relative z-10 flex flex-col items-center justify-center text-center text-white max-w-[1152px] mx-auto gap-3 sm:gap-4 lg:gap-[18px] px-4 sm:px-6 lg:px-8 py-8 sm:py-16 lg:py-24 xl:py-48">
+            <div className="relative z-10 flex flex-col items-center justify-center text-center text-white max-w-[1900px] mx-auto gap-3 sm:gap-4 lg:gap-[18px] px-4 sm:px-6 lg:px-8 py-8 sm:py-16 lg:py-24 xl:py-48">
               <div className="flex flex-col items-center justify-center w-full">
                 {/* Federation Details Badge */}
                 <div className="mb-4 sm:mb-6 lg:mb-8 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center">
@@ -47,20 +48,20 @@ export default function About() {
                 <h1 className="uppercase text-center leading-[0.8] sm:leading-[0.85] lg:leading-[1.2] mb-3 sm:mb-4 lg:mb-6 font-rem text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[95px] font-extrabold bg-gradient-to-b from-gray-100 to-gray-800 bg-clip-text text-transparent">
                   WORLD
                   <br />
-                  ARMLIFTING
+                  ARMLIFTING FEDERATION
                 </h1>
 
                 {/* Subtitle with Gradient */}
                 <div className="relative w-full max-w-[758px] mx-auto mb-4 sm:mb-6 lg:mb-8">
                   <h2 className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-tight mb-3 sm:mb-4 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent font-rem">
-                    FEDERATION: UNITING STRENGTH ATHLETES WORLDWIDE
+                    UNITING STRENGTH ATHLETES WORLDWIDE
                   </h2>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 -mt-24 sm:-mt-32 lg:-mt-52">
+        <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 -mt-[260px] sm:-mt-60 lg:-mt-72">
           {/* Mission & Vision Section */}
           <AnimatedSection delay={0.1} direction="up">
             <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -78,7 +79,7 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-xl sm:rounded-2xl backdrop-blur-sm border border-white/20"></div>
                     <div className="relative p-5 sm:p-6 lg:p-8">
                       <div className="flex items-center xs:items-center mb-2 sm:mb-3">
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg sm:rounded-xl flex items-center justify-center xs:mb-0 xs:mr-3 sm:mr-4">
+                        <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg sm:rounded-xl flex items-center justify-center xs:mb-0 mr-3 sm:mr-4">
                           <svg
                             className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white"
                             fill="none"
@@ -112,7 +113,7 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-xl sm:rounded-2xl backdrop-blur-sm border border-white/20"></div>
                     <div className="relative p-5 sm:p-6 lg:p-8">
                       <div className="flex items-center xs:items-center mb-4 sm:mb-6">
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg sm:rounded-xl flex items-center justify-center xs:mb-0 xs:mr-3 sm:mr-4">
+                        <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg sm:rounded-xl flex items-center justify-center xs:mb-0 mr-3 sm:mr-4">
                           <svg
                             className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white"
                             fill="none"
@@ -202,7 +203,7 @@ export default function About() {
                 {/* Simple, clean header */}
                 <div className="mb-12 lg:mb-16">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 font-rem">
-                    A Message from Our President
+                    Our President
                   </h2>
                   <div className="w-16 h-1 bg-blue-600 mb-6"></div>
                 </div>
@@ -334,31 +335,15 @@ export default function About() {
                   <div className="lg:col-span-2 order-1 lg:order-2">
                     <div className="relative">
                       {/* Simple, clean image container */}
-                      <div className="aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                        <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-24 h-24 bg-gray-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                              <svg
-                                className="w-12 h-12 text-white"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                                />
-                              </svg>
-                            </div>
-                            <p className="text-gray-600 font-medium">
-                              Michael Brown
-                            </p>
-                            <p className="text-gray-500 text-sm">
-                              WALF President
-                            </p>
-                          </div>
+                      <div className="aspect-auto lg:aspect-[3/4] bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                        <div className="rounded-lg">
+                          <Image
+                            src="/assets/portrait1.png"
+                            alt="President"
+                            width={500}
+                            height={500}
+                            className="w-full h-full"
+                          />
                         </div>
                       </div>
 
@@ -391,9 +376,11 @@ export default function About() {
                   </p>
                 </div>
 
-                {/* Leaders Grid */}
-                <div className="flex flex-wrap justify-center gap-2 sm:gap-4 lg:gap-6">
-                  {[
+                {/* Leaders Slider (same behavior and styles as PartnersSection) */}
+                {/* Partners-style slider */}
+                {/* Import LeadersSlider client component and pass the leaders array */}
+                <LeadersSlider
+                  leaders={[
                     {
                       name: "Alex Johnson",
                       role: "Technical Director",
@@ -422,60 +409,11 @@ export default function About() {
                         "Advancing the scientific understanding of armlifting through research and innovation in sports performance and athlete safety.",
                       image: "/assets/speakers/speaker4.png",
                     },
-                  ].map((leader, index) => (
-                    <div
-                      key={index}
-                      className="relative w-[200px] h-[280px] xs:w-[220px] xs:h-[310px] sm:w-[250px] sm:h-[350px] md:w-[280px] md:h-[390px] lg:w-[300px] lg:h-[426px] flex-shrink-0 rounded-[20px] overflow-hidden group"
-                    >
-                      <div className="absolute inset-0 rounded-[20px] bg-gradient-to-b from-[#1a237e52] via-[#f5f5f5cc] to-[#1a237e] opacity-80 group-hover:opacity-0 transition-opacity" />
-                      {/* Image */}
-                      <Image
-                        src={leader.image}
-                        alt={leader.name}
-                        fill
-                        className="object-cover transition-opacity duration-300 group-hover:opacity-0"
-                      />
-                      {/* Hover: full blue patterned overlay */}
-                      <div
-                        className="absolute inset-0 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        style={{
-                          backgroundImage: "url('/assets/hover-bg.png')",
-                          backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat",
-                          backgroundPosition: "center",
-                        }}
-                      />
-
-                      {/* Text overlay (default) */}
-                      <div className="absolute bottom-0 left-0 right-0 px-3 xs:px-4 sm:px-5 lg:px-[20px] pb-4 xs:pb-5 sm:pb-6 md:pb-8 lg:pb-[39px] pr-8 xs:pr-10 sm:pr-12 md:pr-16 lg:pr-[80px] flex flex-col gap-1 sm:gap-2 lg:gap-[8px] transition-opacity group-hover:opacity-0">
-                        <p className="text-white text-sm xs:text-base sm:text-lg md:text-xl lg:text-[24px] font-bold font-rem">
-                          {leader.name}
-                        </p>
-                        <p className="text-[#f5f5f5] text-xs lg:text-[12px] font-rem">
-                          {leader.role}
-                        </p>
-                      </div>
-
-                      {/* Text overlay (hover state with description) */}
-                      <div className="absolute inset-0 px-3 xs:px-4 sm:px-5 lg:px-[20px] pt-3 xs:pt-4 sm:pt-5 lg:pt-[20px] flex flex-col gap-1 sm:gap-2 lg:gap-[8px] opacity-0 group-hover:opacity-100 transition-opacity">
-                        <p className="text-white text-sm xs:text-base sm:text-lg md:text-xl lg:text-[24px] font-bold font-rem">
-                          {leader.name}
-                        </p>
-                        <p className="text-[#f5f5f5] text-xs lg:text-[12px] font-rem">
-                          {leader.role}
-                        </p>
-                        <div className="mt-auto pb-3 xs:pb-4 sm:pb-5 lg:pb-[20px] pr-3 xs:pr-4 sm:pr-5 lg:pr-[20px]">
-                          <p className="text-[#f5f5f5] text-xs xs:text-sm lg:text-[14px] leading-relaxed font-pt-sans-caption">
-                            {leader.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                  ]}
+                />
 
                 {/* Call to Action */}
-                <div className="text-center mt-10 sm:mt-12 lg:mt-16">
+                <div className="text-center mt-10 sm:mt-12 lg:mt-16 mx-10 sm:mx-12 lg:mx-16">
                   <button className="bg-white text-blue-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base hover:bg-gray-100 transition-colors font-pt-sans-caption w-full sm:w-auto">
                     Meet Our Full Leadership Team →
                   </button>
@@ -636,7 +574,7 @@ export default function About() {
           </div>
 
           {/* Footer */}
-          <div className="px-42 pb-4">
+          <div className="mx-4 sm:mx-8 md:mx-12 pb-4">
             <FooterSection />
           </div>
         </div>
