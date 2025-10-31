@@ -48,15 +48,14 @@ export default function WAFHighlightSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
           {/* Large Featured Card - Left side, spans 2 columns on large screens */}
           <div className="lg:col-span-2">
-            <div
-              className="relative h-64 sm:h-72 md:h-82 lg:h-[400px] rounded-2xl lg:rounded-3xl overflow-hidden"
-              style={{
-                backgroundImage: "url(/assets/news1.png)",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
+            <div className="relative h-64 sm:h-72 md:h-82 lg:h-[400px] rounded-2xl lg:rounded-3xl overflow-hidden">
+              <Image
+                src="/assets/news1.png"
+                alt="Championship final news"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 66vw"
+              />
               <div
                 className="absolute inset-0 flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-2xl lg:rounded-3xl"
                 style={{
@@ -144,15 +143,14 @@ export default function WAFHighlightSection() {
 
               {/* Image Card */}
               <div className="h-full">
-                <div
-                  className="relative h-56 sm:h-64 md:h-82 lg:h-48 rounded-xl lg:rounded-2xl overflow-hidden"
-                  style={{
-                    backgroundImage: "url(/assets/news5.png)",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                  }}
-                >
+                <div className="relative h-56 sm:h-64 md:h-82 lg:h-48 rounded-xl lg:rounded-2xl overflow-hidden">
+                  <Image
+                    src="/assets/news5.png"
+                    alt="News image"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 50vw, 16vw"
+                  />
                   <div
                     className="absolute inset-0 rounded-xl lg:rounded-2xl"
                     style={{
@@ -165,15 +163,14 @@ export default function WAFHighlightSection() {
 
               {/* Bottom Event Card - Spans both columns */}
               <div className="col-span-2">
-                <div
-                  className="relative h-56 sm:h-64 md:h-80 lg:h-[190px] rounded-xl lg:rounded-2xl overflow-hidden"
-                  style={{
-                    backgroundImage: "url(/assets/news3.png)",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                  }}
-                >
+                <div className="relative h-56 sm:h-64 md:h-80 lg:h-[190px] rounded-xl lg:rounded-2xl overflow-hidden">
+                  <Image
+                    src="/assets/news3.png"
+                    alt="Our new Event"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                  />
                   <div
                     className="absolute inset-0 flex flex-col justify-between p-2 sm:p-3 lg:p-4 rounded-xl lg:rounded-2xl"
                     style={{

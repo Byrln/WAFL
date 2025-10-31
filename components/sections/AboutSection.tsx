@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function AboutSection() {
   return (
     <section id="about" className="mx-auto max-w-7xl px-3 pt-6">
@@ -15,22 +18,27 @@ export default function AboutSection() {
             </div>
 
             <div className="inline-flex items-center justify-center gap-2 sm:gap-3 border-2 border-black rounded-full px-3 sm:px-6 py-2 sm:py-3 h-auto sm:h-[67px] w-fit hover:bg-gray-100 transition-colors cursor-pointer">
-              <p className="text-sm sm:text-lg lg:text-xl font-bold text-gray-900 font-pt-sans-caption whitespace-nowrap">
-                Read More About Us
-              </p>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-4 h-4 sm:w-6 sm:h-6 flex-shrink-0"
+              <Link
+                href={"/about"}
+                className="flex items-center justify-center gap-2 sm:gap-3 z-10"
               >
-                <path
-                  d="M7 7h10v10M7 17L17 7"
-                  stroke="#212121"
-                  strokeWidth="2"
-                />
-              </svg>
+                <p className="text-sm sm:text-lg lg:text-xl font-bold text-gray-900 font-pt-sans-caption whitespace-nowrap">
+                  Read More About Us
+                </p>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  className="w-4 h-4 sm:w-6 sm:h-6 flex-shrink-0"
+                >
+                  <path
+                    d="M7 7h10v10M7 17L17 7"
+                    stroke="#212121"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </Link>
             </div>
           </div>
 
@@ -52,28 +60,34 @@ export default function AboutSection() {
         {/* Image Section */}
         <div className="relative -mt-14 mb-5 sm:mt-12 lg:mt-[-160px] h-[250px] sm:h-[400px] lg:h-[530px] overflow-hidden">
           {/* Background Image */}
-          <div
-            className="absolute top-[80px] sm:top-[150px] lg:top-[192px] left-0 right-0 lg:left-0 lg:right-auto w-full lg:w-[1236px] h-[170px] sm:h-[250px] lg:h-[334px] rounded-[15px] sm:rounded-[20px] lg:rounded-[25px] bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('/assets/about-bg.png')",
-              backgroundPosition: "center center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="absolute top-[80px] sm:top-[150px] lg:top-[192px] left-0 right-0 lg:left-0 lg:right-auto w-full lg:w-[1236px] h-[170px] sm:h-[250px] lg:h-[334px] rounded-[15px] sm:rounded-[20px] lg:rounded-[25px] overflow-hidden">
+            <Image
+              src="/assets/about-bg.png"
+              alt="About background"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 1236px"
+            />
             <div className="absolute bottom-0 right-0 sm:bottom-3 sm:right-3 lg:top-[280px] lg:left-[1160px] lg:bottom-auto lg:right-auto flex items-center bg-gray-100 px-3 py-2 sm:px-4 lg:px-4 lg:py-2 rounded-tl-[30px] sm:rounded-tl-[40px] lg:rounded-tl-[46px] rounded-br-[15px] sm:rounded-br-[18px] lg:rounded-br-[22px]">
-              <img
+              <Image
                 src="/assets/logo.png"
                 alt="WAF Logo"
+                width={42}
+                height={42}
                 className="w-6 h-6 sm:w-8 sm:h-8 lg:w-[42px] lg:h-[42px] rounded-full"
+                priority
               />
             </div>
           </div>
 
           {/* Main Image */}
-          <img
+          <Image
             src="/assets/about-pick.png"
             alt="About visual"
+            width={446}
+            height={440}
             className="absolute top-0 sm:top-[-8px] left-1/2 transform -translate-x-1/2 lg:left-[593px] lg:transform-none w-[240px] h-[240px] sm:w-[350px] sm:h-[350px] lg:w-[446px] lg:h-[440px] object-cover"
+            priority
           />
         </div>
       </div>

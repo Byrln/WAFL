@@ -7,46 +7,32 @@ export default function PartnersSection() {
   const trackRef = useRef<HTMLDivElement>(null);
   const cards = [
     {
-      src: "/assets/portrait1.png",
-      name: "David Sequiera",
-      role: "North Asia’s President",
+      name: "Alex Johnson",
+      role: "Technical Director",
       description:
-        "Long Description About That Person’s Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla.",
+        "Leading technical development and competition standards with over 15 years of experience in strength sports and athletic performance.",
+      src: "/assets/speakers/speaker1.png",
     },
     {
-      src: "/assets/portrait2.png",
-      name: "David Sequiera",
-      role: "North Asia’s President",
+      name: "Maria Rodriguez",
+      role: "International Relations",
       description:
-        "Long Description About That Person’s Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla.",
+        "Fostering global partnerships and expanding the federation's reach across continents with expertise in international sports diplomacy.",
+      src: "/assets/speakers/speaker2.png",
     },
     {
-      src: "/assets/portrait1.png",
-      name: "David Sequiera",
-      role: "North Asia’s President",
+      name: "David Chen",
+      role: "Training & Development",
       description:
-        "Long Description About That Person’s Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla.",
+        "Developing world-class training programs and coaching standards to elevate the sport of armlifting to new heights.",
+      src: "/assets/speakers/speaker3.png",
     },
     {
-      src: "/assets/portrait2.png",
-      name: "Sequiera David",
-      role: "North Asia’s President",
+      name: "Sarah Williams",
+      role: "Sports Science Director",
       description:
-        "Long Description About That Person’s Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla.",
-    },
-    {
-      src: "/assets/portrait1.png",
-      name: "David Sequiera",
-      role: "North Asia’s President",
-      description:
-        "Long Description About That Person’s Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla.",
-    },
-    {
-      src: "/assets/portrait2.png",
-      name: "David Sequiera",
-      role: "North Asia’s President",
-      description:
-        "Long Description About That Person’s Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla.",
+        "Advancing the scientific understanding of armlifting through research and innovation in sports performance and athlete safety.",
+      src: "/assets/speakers/speaker4.png",
     },
   ];
 

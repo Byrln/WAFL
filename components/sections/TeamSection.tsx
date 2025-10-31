@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { Facebook, Instagram } from "lucide-react";
+import Image from "next/image";
 
 export default function TeamSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -110,13 +111,14 @@ export default function TeamSection() {
                 <div
                   key={index}
                   className="relative flex-shrink-0 w-[220px] h-[220px] sm:w-[250px] sm:h-[250px] lg:w-[271px] lg:h-[271px] rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${member.image})`,
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                  }}
                 >
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 220px, (max-width: 1024px) 250px, 271px"
+                  />
                   {/* Social Icons */}
                   <div className="absolute top-2 right-2 flex gap-1">
                     <div className="w-8 h-8 sm:w-9 sm:h-9 lg:w-[42px] lg:h-[42px] bg-white/30 backdrop-blur border border-gray-700/30 rounded-[16px] sm:rounded-[18px] lg:rounded-[20px] flex items-center justify-center">

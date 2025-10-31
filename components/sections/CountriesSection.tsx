@@ -24,7 +24,13 @@ export default function CountriesSection() {
       <span className="font-bold uppercase mx-2 sm:mx-3 lg:mx-4 font-pt-sans-caption text-sm sm:text-base lg:text-[20px] text-white leading-tight whitespace-nowrap">
         {flag.name}
       </span>
-      <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-white rounded-full flex-shrink-0" />
+      <Image
+        src="/assets/teams.svg"
+        alt="Line"
+        width={10}
+        height={10}
+        className="flex-shrink-0 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
+      />
     </div>
   );
 
@@ -50,9 +56,16 @@ export default function CountriesSection() {
         >
           {/* Multiple sets for seamless infinite scroll */}
           {Array.from({ length: 4 }, (_, setIndex) => (
-            <div key={setIndex} className="flex items-center px-4 sm:px-5 lg:px-[20px]">
+            <div
+              key={setIndex}
+              className="flex items-center px-4 sm:px-5 lg:px-[20px]"
+            >
               {countries.map((flag, index) => (
-                <FlagItem key={`${setIndex}-${flag.name}-${index}`} flag={flag} index={index} />
+                <FlagItem
+                  key={`${setIndex}-${flag.name}-${index}`}
+                  flag={flag}
+                  index={index}
+                />
               ))}
             </div>
           ))}
@@ -78,9 +91,16 @@ export default function CountriesSection() {
         >
           {/* Multiple sets for seamless infinite scroll */}
           {Array.from({ length: 4 }, (_, setIndex) => (
-            <div key={setIndex} className="flex items-center px-4 sm:px-5 lg:px-[20px]">
+            <div
+              key={setIndex}
+              className="flex items-center px-4 sm:px-5 lg:px-[20px]"
+            >
               {countries.map((flag, index) => (
-                <FlagItem key={`${setIndex}-${flag.name}-${index}`} flag={flag} index={index} />
+                <FlagItem
+                  key={`${setIndex}-${flag.name}-${index}`}
+                  flag={flag}
+                  index={index}
+                />
               ))}
             </div>
           ))}

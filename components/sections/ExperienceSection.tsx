@@ -16,20 +16,20 @@ export default function ExperienceSection() {
             <div className="flex flex-col items-center self-stretch lg:mx-[89px]">
               {/* Header */}
               <div className="inline-flex flex-col items-start justify-center self-stretch">
-                <p className="text-[#212121] font-bold text-xl sm:text-2xl md:text-4xl lg:text-[64px] leading-tight sm:leading-[1.2] lg:leading-[83px] font-pt-sans-caption">
+                <p className="text-[#212121] font-bold text-xl sm:text-2xl md:text-4xl lg:text-[42px] leading-tight sm:leading-[1.2] lg:leading-[83px] font-pt-sans-caption">
                   We aim to empower athletes
                 </p>
-                <div className="flex items-center self-stretch justify-centr gap-4 sm:gap-6 lg:gap-[96px] mt-2 sm:-mt-2 lg:mt-[-12px] mr-0 lg:mr-[330px]">
-                  <p className="text-[#1a237e] text-xl sm:text-2xl md:text-4xl lg:text-[30px] xl:text-[64px] leading-tight sm:leading-[1.2] lg:leading-[82px] font-pt-sans-caption">
+                <div className="flex items-center self-stretch justify-between gap-4 sm:gap-6 lg:gap-[96px] mt-2 sm:-mt-2 lg:mt-[-12px] mr-0 lg:mr-[330px]">
+                  <p className="text-[#1a237e] text-xl sm:text-2xl md:text-3xl lg:text-[38px] leading-tight sm:leading-[1.2] lg:leading-[82px] font-pt-sans-caption">
                     by instilling confidence
                   </p>
-                  <div className="flex-shrink-0 rounded-full w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-[64px] lg:h-[64px] overflow-hidden bg-[#1A237E]">
+                  <div className="flex-shrink-0 relative flex items-center justify-center rounded-full bg-[#1A237E] w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-[54px] lg:h-[54px]">
                     <Image
                       src="/assets/dumbbell.svg"
                       alt="Dumbbell"
-                      width={32}
-                      height={32}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-contain p-1.5 sm:p-2 md:p-2.5 lg:p-2.5"
+                      sizes="(max-width: 640px) 24px, (max-width: 768px) 32px, (max-width: 1024px) 40px, 54px"
                     />
                   </div>
                 </div>

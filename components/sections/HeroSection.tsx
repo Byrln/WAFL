@@ -1,18 +1,22 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section className="relative flex items-center justify-center mx-1 sm:mx-5 my-1 sm:my-2.5 rounded-xl sm:rounded-2xl lg:rounded-4xl overflow-hidden min-h-[500px] sm:min-h-[600px] lg:min-h-[753px]">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/assets/Herosection.png')",
-        }}
+      <Image
+        src="/assets/Herosection.png"
+        alt="Hero background"
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
       />
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/assets/grain.jpg')",
-          opacity: 0.2,
-        }}
+      <Image
+        src="/assets/grain.jpg"
+        alt="Grain texture"
+        fill
+        className="object-cover opacity-20"
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/64" />
 
