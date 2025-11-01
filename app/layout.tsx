@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/site";
 import {
   Geist,
   Geist_Mono,
@@ -44,9 +45,52 @@ const justAnotherHand = Just_Another_Hand({
 });
 
 export const metadata: Metadata = {
-  title: "Horeca | WALF",
+  metadataBase: new URL(getSiteUrl()),
+  title: {
+    default: "World Armlifting Federation (WAF)",
+    template: "%s | WAF",
+  },
   description:
-    "Horeca-inspired homepage built with Next.js, Tailwind, and shadcn.",
+    "The official World Armlifting Federation (WAF). Uniting strength athletes worldwide with events, rankings, and community.",
+  keywords: [
+    "armlifting",
+    "WAF",
+    "strength sports",
+    "grip sport",
+    "World Armlifting Federation",
+  ],
+  authors: [{ name: "World Armlifting Federation (WAF)", url: getSiteUrl() }],
+  openGraph: {
+    type: "website",
+    siteName: "World Armlifting Federation (WAF)",
+    url: getSiteUrl(),
+    title: "World Armlifting Federation (WAF)",
+    description:
+      "Official federation for armlifting. Discover events, leaders, partners, and global teams.",
+    images: [
+      {
+        url: `${getSiteUrl()}/assets/Herosection.png`,
+        width: 1200,
+        height: 630,
+        alt: "WAF Hero",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "World Armlifting Federation (WAF)",
+    description:
+      "Official federation for armlifting. Discover events, leaders, partners, and global teams.",
+    images: [`${getSiteUrl()}/assets/Herosection.png`],
+    site: "@waf",
+    creator: "@waf",
+  },
+  alternates: {
+    canonical: getSiteUrl(),
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

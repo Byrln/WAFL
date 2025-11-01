@@ -1,5 +1,8 @@
 "use client";
 
+import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/site";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import LeadersSlider from "../../components/sections/LeadersSlider";
@@ -41,8 +44,8 @@ export default function About() {
                     <span className="text-xs sm:text-sm lg:text-base font-pt-sans-caption font-medium">
                       Established 1995 • Global Federation
                     </span>
-                  </div>
-                </div>
+        </div>
+      </div>
 
                 {/* Main Title with Gradient */}
                 <h1 className="uppercase text-center leading-[0.8] sm:leading-[0.85] lg:leading-[1.2] mb-3 sm:mb-4 lg:mb-6 font-rem text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[95px] font-extrabold bg-gradient-to-b from-gray-100 to-gray-800 bg-clip-text text-transparent">
@@ -578,7 +581,28 @@ export default function About() {
             <FooterSection />
           </div>
         </div>
+        <Script id="ld-org-about" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "World Armlifting Federation (WAF)",
+            url: `${getSiteUrl()}/about`,
+            logo: `${getSiteUrl()}/assets/logo.png`,
+          })}
+        </Script>
       </main>
     </PageTransition>
   );
 }
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn about the World Armlifting Federation (WAF), mission, vision, leaders and teams.",
+  alternates: {
+    canonical: `${getSiteUrl()}/about`,
+  },
+  openGraph: {
+    url: `${getSiteUrl()}/about`,
+  },
+};

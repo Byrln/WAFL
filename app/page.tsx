@@ -1,5 +1,8 @@
 "use client";
 
+import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/site";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -48,6 +51,31 @@ export default function Home() {
           <ExperienceSection />
         </AnimatedSection>
       </main>
+      <Script id="ld-org-home" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "World Armlifting Federation (WAF)",
+          url: getSiteUrl(),
+          logo: `${getSiteUrl()}/assets/logo.png`,
+          sameAs: [
+            "https://twitter.com/waf",
+            "https://instagram.com/waf",
+          ],
+        })}
+      </Script>
     </PageTransition>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Discover WAF highlights, partners, teams, and global armlifting community.",
+  alternates: {
+    canonical: getSiteUrl(),
+  },
+  openGraph: {
+    url: getSiteUrl(),
+  },
+};
