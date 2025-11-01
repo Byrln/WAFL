@@ -89,8 +89,19 @@ export const metadata: Metadata = {
     canonical: getSiteUrl(),
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/assets/logo/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/assets/logo/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/assets/logo/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: [
+      { url: "/assets/logo/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: [
+      { url: "/assets/logo/favicon.ico", type: "image/x-icon" },
+    ],
   },
+  manifest: "/assets/logo/site.webmanifest",
 };
 
 export default function RootLayout({
