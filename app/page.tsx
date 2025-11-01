@@ -1,4 +1,4 @@
-"use client";
+// Server component page to support Next.js metadata exports
 
 import type { Metadata } from "next";
 import { getSiteUrl } from "@/lib/site";
